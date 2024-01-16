@@ -1,0 +1,502 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+html {
+    background-color: #f8f9fb;
+}
+nav {
+    width: 100%;
+    padding: 20px;
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+    
+}
+.left-hand {
+    width: 200px;
+    height: 50px;
+}
+
+.left-hand img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.right-hand {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+.right-hand .menu-bar ul {
+    display: flex;
+    gap: 2rem;
+}
+
+.right-hand .menu-bar ul li{
+    list-style: none;
+}
+.right-hand .menu-bar ul li a{
+    text-decoration: none;
+    color: black;
+}
+
+
+.login .login-btn {
+    background-color: black;
+    padding: 10px;
+    border-radius: 10px;
+    text-align: center;
+    width: 100px;
+    transition: all 0.3s;
+    cursor: pointer;
+}
+.login .login-btn:hover {
+    background-color: #0000006f;
+    color: gray;
+}
+.login .login-btn a{
+    text-decoration: none;
+    color: white;
+}
+
+/* home section starts here */
+
+.home {
+    width: 100%;
+    height: 88vh;
+    padding: 2rem;
+   
+}
+
+.home .home-image {
+    background: url('image/home.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 100%;
+    border-radius: 1rem;
+    display: flex;
+    justify-content: center;
+    position: relative;
+}
+
+.home .home-image .home-text {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5); /* Semi-transparent black background overlay */
+    display: flex;
+    border-radius: 1rem;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.home .home-image .home-text h1 {
+    font-size: 5rem;
+    margin-bottom: 1rem;
+    color: white;
+}
+
+.home .home-image .home-text p {
+    font-size: 1.5rem;
+    margin: 0 10rem;
+    font-weight: 400;
+    margin-bottom: 2rem;
+    color: white;
+}
+
+.home .home-image .home-text a {
+    color: black;
+    text-decoration: none;
+    font-size:1.2rem;
+    border: 2px solid black;
+    padding: .5rem 1.5rem;
+    border-radius: .5rem;
+}
+
+.home .home-image .home-text a:hover {
+    background-color: black;
+    color: white;
+}
+
+.home .home-bottom {
+    width: 100%;
+    position: relative;
+}
+
+.home .home-bottom .my-box {
+    background: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 2rem;
+    width: 100%;
+    transform: translate(0, -4.5rem);
+    border-radius: 1.5rem;
+    box-shadow: 2px 2px 35px #161c8a3c;
+    padding: 2.5rem 1rem;
+    width: 88vw;
+    margin: 0 auto;
+}
+
+.home .home-bottom .my-box .box {
+    padding: .2rem 1rem;
+    width: 100%;
+    flex: 1 0 120px;
+}
+
+.home .home-bottom .my-box .box:nth-child(1), 
+.home .home-bottom .my-box .box:nth-child(2) {
+    border-right: 2px solid black;
+}
+
+.home .home-bottom .my-box .box h5 {
+    font-size: 1.3rem;
+    margin-bottom: .5rem;
+}
+
+.home .home-bottom .my-box .box p {
+    color: #444;
+    font-size: 1.1rem;
+}
+
+.home .home-bottom .my-box .box a {
+ float: right;
+ padding: 1rem 2rem;
+ color: white;
+ background-color: blue;
+ border-radius: .5rem;
+ font-size: 1.1rem;
+ font-weight: 400;
+
+}
+.home .home-bottom .my-box .box a:hover {
+    background: #a7abff;
+    color: var(--white);
+    font-weight: 400;
+}
+
+/* home section end here */
+
+/* contact-us section start here */
+.con-section {
+    padding: 8rem;
+    margin-top: 10rem;
+    background-color: white;
+}
+
+.con-section .contact-us {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 4rem;
+}
+.con-section .contact-us .text, 
+.con-section .contact-us .box {
+    flex: 1 0 260px;
+
+} 
+
+.con-section .contact-us .text p {
+    margin:2rem 0;
+    font-size: 1.5rem;
+    line-height: 1.4;
+}
+.con-section .contact-us .text h2 {
+    font-size: 4.6rem;
+}
+.con-section .contact-us .text a {
+    font-size: 1.3rem;
+    color: white;
+    padding: 1rem 2rem;
+    background-color: black;
+    border-radius: .4rem;
+    margin-top: .5rem;
+    display: inline-block;
+    transition: all 0.3s;
+    text-decoration: none;
+}
+.con-section .contact-us .text a:hover {
+    transform: translate(0, -.5rem);
+    box-shadow: 1px 1px 13px #0000006f;
+}
+.con-section .contact-us .box{
+    height: 70vh;
+    padding-left: 10rem;
+    position: relative;
+}
+.con-section .contact-us .box .image {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    border-radius: 1.5rem;
+    box-shadow: 1px 21px 30px -1rem rgba(3,66,148,0.37);
+}
+
+.con-section .contact-us .box .image img{
+    width: 100%;
+    height: 100%;
+    object-fit: fill;
+    object-position: center;
+}
+
+    
+
+.con-section .contact-us .box .s-box {
+    position: absolute;
+    top: 60%;
+    left: 6%;
+    background-color: white;
+    padding: 2rem;
+    width: 18rem;
+    border-radius: 1rem;
+    box-shadow: 1px 1px 45px #0000002d;
+    transition: all 0.3s ;
+}
+    
+.con-section .contact-us .box .s-box h3 {
+    font-size: 3rem;
+    color: rgba(0, 132, 255);
+}
+
+.con-section .contact-us .box .s-box p {
+    font-size: 1.4rem;
+    margin-top: .8rem;
+}
+
+.con-section .contact-us .box .s-box:hover {
+    transform: translate(0, -1rem);
+}
+
+/* contact-us section end  here */
+
+/* map section start here */
+.map {
+    width: 100%;
+    /* height: 400px; */
+    padding: 10px;
+}
+.map .image {
+    width: 100%;
+    height: 100%;
+}
+.map .image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;    
+    object-position: center;
+   
+}
+/* map section end here */
+
+/* property section start here */
+
+.property {
+    width: 100%;
+    padding: 5rem 5rem;
+}
+
+.property .prop-h {
+    width: 100%;
+    max-width: 60rem;
+    margin: 0 auto;
+}
+.property .prop-h h2{
+    font-size: 4rem;
+    text-align: center;
+
+}
+
+.property .prop-h p{
+    font-size: 1.3rem;
+    color: #333;
+    line-height: 1.5;
+    text-align: center;
+    margin: 2rem 0;
+
+}
+
+
+.property .de-box {
+    margin-top: 4rem;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap:4rem;
+}
+
+.property .de-box .box {
+    width: 100%;
+    height: 35rem;
+    background: white;
+    border-radius: 1.2rem;
+    overflow: hidden;
+    position: relative;
+}
+
+.property .de-box .box .image {
+    width: 100%;
+    height: 20rem;
+    overflow: hidden;
+}
+
+.property .de-box .box .image img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+.property .de-box .box .price-name {
+    padding: 2rem;
+    border-bottom: 1px solid #b0b0b04d;
+}
+.property .de-box .box .price-name h4 {
+    font-size: 1.5rem;
+    color: blue;
+    margin-bottom: .8rem;
+    line-height: 0.2;
+
+} 
+.property .de-box .box .price-name p {
+    font-size: 1.1rem;
+    font-weight: 500;
+}
+.property .de-box .box .location-detail {
+    padding: 1.2rem;
+    border-bottom: 1px solid #b0b0b04d;
+    margin-bottom: 1rem;
+}
+.property .de-box .box .location-detail p {
+    font-size: 1.1rem;
+    font-weight: 500;
+    
+}
+.property .de-box .box .location-detail p img{
+    width: 20px;
+    vertical-align: middle;
+}
+
+.property .de-box .box .detail{
+    width: 85%;
+    display: flex;
+    justify-content: space-between;
+    position: absolute;
+    padding: 1.2rem;
+}
+
+.property .de-box .box .detail ul {
+    width: 85%;
+    display: flex;
+    justify-content: space-between;
+    position: absolute;
+    bottom: 1rem;
+}
+
+.property .de-box .box .detail ul li {
+    list-style: none;
+    font-size: 1.2rem;
+    font-weight: 500;
+}
+
+.property .de-box .box .detail ul li img{
+    width: 20px;
+    margin-right: 1rem;
+}
+  
+
+/* property section end here */
+@media (max-width:1050px) {
+    .con-section {
+        margin-top: 15rem;
+        padding: 3.4rem 4rem;
+    }
+    .con-section .contact-us {
+        gap: 10rem;
+
+    }
+    .con-section .contact-us .text h2 {
+        font-size: 3.3rem;
+    }
+
+    .con-section .contact-us .text p {
+        font-size: 1.3rem;
+    }
+    .con-section .contact-us .box {
+        padding-left: 0rem;
+        height: 50vh;
+
+    }
+    .con-section .contact-us .box .s-box {
+        top: -15%;
+        left: 50%;
+        transform: translate(-50%, 0);
+    }
+
+    .con-section .contact-us .box .s-box:hover {
+        transform: translate(-50%, -5%);
+    }
+
+    .property{
+        padding: 10rem 4rem;
+    }
+    .property .de-box {
+        gap: 2rem;
+    }
+}
+
+@media (max-width: 960px){
+    .property .de-box {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+@media (max-width: 780px){
+    .home .home-image .home-text h1{
+        font-size: 3em;
+    }
+    .home .home-image .home-text p {
+        margin: 0;
+        margin-bottom: 3rem;
+    }
+
+    .home .home-bottom .my-box {
+        transform: translate(0);
+        margin-top: 4rem;
+    }
+
+    .property .de-box {
+        grid-template-columns: 1fr;
+    }
+    
+}
+
+@media (max-width: 450px){
+    html{
+        font-size: 60%;
+    }    
+    .home .home-image .home-text {
+        padding: 1rem;
+    }
+    .home .home-image .home-text p{
+        margin: 0;
+        margin-bottom: 3rem;
+        font-size: 1.8rem;
+        line-height: 1.5;
+    }
+
+    .home .home-bottom .my-box .box:nth-child(2) {
+        border: none;
+    }
+
+}
